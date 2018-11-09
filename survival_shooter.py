@@ -96,7 +96,7 @@ def drawEnemies(enemies):
 #draws player health bar
 def drawHealthBar(health):
     healthrect = pygame.Rect(0,0,health,h/20)
-    healthtext, healthbounds = showMessage("Health", 24, "Comic Sans", healthrect.centerx , healthrect.centery, WHITE)
+    healthtext, healthbounds = showMessage("Health", 24, "Arial", healthrect.centerx , healthrect.centery, WHITE)
     
     pygame.draw.rect(surface, WHITE, (0,0,w,h/18), 0)
     if health>0:
@@ -106,7 +106,7 @@ def drawHealthBar(health):
 #shows the score of the player
 def drawScore(score):
     string = "Score: " + str(score)
-    scoretext, scorebounds = showMessage(string, 24, "Comic Sans MS", w/8, h/14, BLUE)
+    scoretext, scorebounds = showMessage(string, 24, "Arial", w/8, h/14, BLUE)
     return scoretext, scorebounds
 
 #gives the bounds and text to display a message
@@ -132,16 +132,16 @@ def drawScene(playerrect, playerimage, bullets, enemybullets, enemies, health, g
     surface.blit(playerimage, playerrect)
     if gameOver:
         if initiated:
-            endtext, endbounds = showMessage("You Died.", 48, "Comic Sans MS", w/2, h/2, BLUE)
-            replaytext, replaybounds = showMessage("Press Enter to Play Again", 24, "Comic Sans MS", w/2, 3 * h/4, BLUE)
+            endtext, endbounds = showMessage("You Died.", 48, "Arial", w/2, h/2, BLUE)
+            replaytext, replaybounds = showMessage("Press Enter to Play Again", 24, "Arial", w/2, 3 * h/4, BLUE)
             surface.blit(replaytext, replaybounds)
             surface.blit(endtext, endbounds)
         else:
-            replaytext, replaybounds = showMessage("Press Enter to Play", 24, "Comic Sans MS", w/2,h/4, RED, BLACK)
-            instructline1, instructbounds1 = showMessage("Press Space To Shoot And The Arrows To Move", 24, "Comic Sans MS", w/2, h/2, RED, BLACK)
-            instructline2, instructbounds2 = showMessage("Press A To Rotate Clockwise And D To Rotate Counter Clockwise", 24, "Comic Sans MS", w/2, 3*h/5, RED, BLACK)
-            instructline3, instructbounds3 = showMessage("You lose whenever you run out of health.", 24, "Comic Sans MS", w/2, 7 * h/10, RED, BLACK)
-            instructline4, instructbounds4 = showMessage("You lose health by getting shot or touching enemies.", 24, "Comic Sans MS", w/2, 8*h/10, RED, BLACK)
+            replaytext, replaybounds = showMessage("Press Enter to Play", 24, "Arial", w/2,h/4, RED, BLACK)
+            instructline1, instructbounds1 = showMessage("Press Space To Shoot And The Arrows To Move", 24, "Arial", w/2, h/2, RED, BLACK)
+            instructline2, instructbounds2 = showMessage("Press A To Rotate Clockwise And D To Rotate Counter Clockwise", 24, "Arial", w/2, 3*h/5, RED, BLACK)
+            instructline3, instructbounds3 = showMessage("You lose whenever you run out of health.", 24, "Arial", w/2, 7 * h/10, RED, BLACK)
+            instructline4, instructbounds4 = showMessage("You lose health by getting shot or touching enemies.", 24, "Arial", w/2, 8*h/10, RED, BLACK)
             surface.blit(instructline1, instructbounds1)
             surface.blit(instructline2, instructbounds2)
             
