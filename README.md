@@ -1,5 +1,5 @@
 # survival_shooter
-Originally a Final Project for a python class created by a friend
+Originally a Final Project for a python course created by a friend
 
 CREDIT:
 
