@@ -1,11 +1,7 @@
-#Connor Ciccone
-#Survival Shooter
-#Description: requires pygame.  2d, on-rails, top-down shooter
-
-'''
-edits done by Ryan Cole -- ryftrr@gmail.com
-version alpha 1.0.1
-'''
+# Survival Shooter
+# created by: Connor Ciccone
+# description: requires pygame.  2d, on-rails, top-down shooter
+# version alpha 1.0.1
 
 import pygame, sys, math, random
 
