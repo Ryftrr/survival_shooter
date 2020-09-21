@@ -48,15 +48,15 @@ BACKGROUND = (37,122,22)
 Images and other constants
 '''
 #player image came from https://dribbble.com/shots/1767480-Shooter-Shotgun-Boy-Game-Character-Sprites
-unscaledplayerimage = pygame.image.load("player.png")
+unscaledplayerimage = pygame.image.load("gfx/player.png")
 PLAYERIMAGE = pygame.transform.scale(unscaledplayerimage, (80,60))
 
 #walker picture came from https://www.chupamobile.com/ui-graphic-asset/zombies-2d-game-character-sprites-14902
-unscaledwalker = pygame.image.load("enemy.png")
+unscaledwalker = pygame.image.load("gfx/enemy.png")
 WALKER = pygame.transform.scale(unscaledwalker, (64, 80))
 
 #sniper picture came from https://www.traxx.shoes/science-service-results/oct-21-2nd-annual-zombies-coming-5k/
-unscaledsniper = pygame.image.load("sniper.png")
+unscaledsniper = pygame.image.load("gfx/sniper.png")
 SNIPER = pygame.transform.scale(unscaledsniper, (63, 75))
 
 clock = pygame.time.Clock()

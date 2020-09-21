@@ -1,0 +1,4 @@
+# .gitignore
+# survival_shooter repo
+/.vscode
+*.png
