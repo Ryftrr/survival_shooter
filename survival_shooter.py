@@ -63,6 +63,18 @@ clock = pygame.time.Clock()
 
 #-----------------Main Program Loop ----------------
 
+def spawnHealth():
+    pickupw = random.randint(100,700)
+    pickuph = random.randint(100,600)
+    pygame.draw.rect(surface, CYAN, (pickupw,pickuph,50,50))
+    healthbox = pygame.Rect(pickupw,pickuph,50,50)
+    if heathbox.colliderect(player):
+        if health >= 750:
+            health = 800
+        else:
+            health += 50
+
+
 #draws rails player moves on
 def drawBackground():
     pygame.draw.rect(surface, BLACK, (0, h/2-h/6, w, h/3))
